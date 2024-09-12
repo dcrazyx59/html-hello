@@ -1,0 +1,75 @@
+<!-- Si puedes y tienes tiempo, coméntame si los nombres para las clases son apropiados o demasiado complejos/no legibles, gracias!-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Instagram Photo Feed </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="instaHeader">
+            <h1> Breathe Code Photo Feed </h1>
+        </div>
+        <div class="instaBody">
+            <div class="instaPost">
+                <div class="instaPostHeader">
+                    <div class="instaPostHeader1"><p> My first photo </p></div>
+                    <div class="instaPostHeader2"><p> 12/14 </p></div>
+                </div>
+                <div class="instaPostImage">
+                <img src="https://i.pinimg.com/564x/f9/51/20/f9512093abc38b00afec6f4a41164f13.jpg" alt="perro mono">
+                </div>
+                <div class="instaPostBody">
+                    <p> This is my first photo of the feed, this is multiline comment for testing purposes. I am learning to code with #Breathecode</p>
+                </div>
+            </div>
+       
+            <div class="instaPost">
+                <div class="instaPostHeader">
+                    <div class="instaPostHeader1"><p> Some cute thing </p></div>
+                    <div class="instaPostHeader2"><p> 12/17 </p></div>
+                </div>
+                <div class="instaPostImage">
+                <img src="https://i.pinimg.com/564x/60/50/ac/6050acc5e4b76613f4269d8314575864.jpg" alt="perro mono">
+                </div>
+                <div class="instaPostBody">
+                    <p> The internet approves of this cute dog...#Breathecode</p>
+                </div>
+            </div>
+            <div class="instaPost">
+                <div class="instaPostHeader">
+                    <div class="instaPostHeader1"><p> There's a papparazi around </p></div>
+                    <div class="instaPostHeader2"><p> 12/17 </p></div>
+                </div>
+                <div class="instaPostImage">
+                <img src="https://img.freepik.com/free-photo/close-up-woman-typing_23-2148504702.jpg?t=st=1726096778~exp=1726100378~hmac=c8e5f2b2400cded6557af9b73d96b763424238e6dcf8269a7a4287b25c5c8dfe&w=1380" alt="persona con ordenador">
+                </div>
+                <div class="instaPostBody">
+                    <p> There is me waiting for the screen to show my awesome first website made at #Breathecode</p>
+                </div>
+            </div>
+            <div class="instaPost">
+                <div class="instaPostHeader">
+                    <div class="instaPostHeader1"><p> And of course... food! </p></div>
+                    <div class="instaPostHeader2"><p> 12/17 </p></div>
+                </div>
+                <div class="instaPostImage">
+                <img src="https://berryberrylife.com/wp-content/uploads/2024/06/Vermicelli-Upma-Featured-Image.jpg.webp" alt="pasta con verduras">
+                </div>
+                <div class="instaPostBody">
+                    <p> Because no photo feed is cool without some good on it! #Breathecode</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('p').forEach(function(p) {
+                    p.innerHTML = p.innerHTML.replace(/(\#[a-zA-Z0-9]+)/g, '<span class="hashtag"><strong>$1</strong></span>');
+                });
+            });
+        </script>
+        <!-- Podría poner mil <strong> tags para cada #Breathecode, pero quedaría muy feo añadirlo cada vez que hay uno-->
+        <!-- Este script lo he copiado directamente de ChatGPT, todavía no he aprendido js-->
+    </body>
+</html>
